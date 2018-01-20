@@ -1,5 +1,6 @@
 ---
 layout : post
+author : "EzoBear"
 title : "Hello Blog!"
 ---
 
