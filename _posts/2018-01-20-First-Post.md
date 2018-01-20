@@ -3,5 +3,4 @@ layout : post
 author : "EzoBear"
 title : "Hello Blog!"
 ---
-##This is first post for test 
-This is Technical Blog. I'm Ezo Bear
+This is first post for test.
