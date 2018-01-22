@@ -59,7 +59,7 @@ theme: jekyll-theme-prologue
 collections: [sections]
 
 gems:
-    - jekyll-paginate
+    - jekyll-paginate-v2
 
 pagination:
     enabled: true
