@@ -54,6 +54,6 @@ twitter_url:
 # Google Analytics Tracking ID goes here:
 google_analytics:
 
-paginate: 10
-gems:
-  - jekyll-paginate
+# The following settings are NECESSARY for the Prologue theme to run:
+theme: jekyll-theme-prologue
+collections: [sections]
