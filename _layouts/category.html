@@ -1,3 +1,4 @@
+<!--
 ---
 layout: page
 ---
@@ -8,3 +9,51 @@ layout: page
        <br>
     </a>
 {% endfor %}
+-->
+---
+title: Penguins
+layout: blog
+pagination:
+    enabled: true
+    category: Penguin
+    per_page: 2
+---
+
+{% for post in site.categories[page.category] %}
+    <div class="post-list">
+        <h2><a href="{{ post.url }}" class="link-post_list">{{ post.title }}</a></h2>
+        <p class="post-meta">{{ post.date | date: "%b %d, %Y" }} by {{ post.author }}</p>
+        <div class="post-list-content">
+            {{ post.excerpt | truncatewords: 45, '...' }}
+            <p class="text-right"><a href="{{ post.url }}">read more...</a></p>
+        </div>
+    </div>
+{% endfor %}
+
+{% if paginator.total_pages > 1 %}
+    <div class="pagination">
+        {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+        {% else %}
+            <span>&laquo; Prev</span>
+        {% endif %}
+
+        {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+                <em>{{ page }}</em>
+
+            {% elsif page == 1 %} 
+                <a href="{{ '/Penguin/index.html' | prepend: site.baseurl }}">{{ page }}</a>
+            {% else %}
+                <a href="{{ site.paginate_path | prepend: '/Penguin/' | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>     
+                <!-- 페이지 번호를 나타내기 위한 코드. -->
+            {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+        {% else %}
+            <span>Next &raquo;</span>
+        {% endif %}
+    </div>
+{% endif %}
