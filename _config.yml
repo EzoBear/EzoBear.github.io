@@ -57,3 +57,8 @@ google_analytics:
 # The following settings are NECESSARY for the Prologue theme to run:
 remote_theme: chrisbobbe/jekyll-theme-prologue
 collections: [sections]
+
+# 한 페이지에 출력할 글의 갯수
+paginate: 5
+gems:
+  - jekyll-paginate
