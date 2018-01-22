@@ -1,7 +1,7 @@
 ---
 layout : post
 author : "EzoBear"
-category: "C#"
+category: "c#"
 title : "Hello Blog!"
 ---
 This is first post for test.
