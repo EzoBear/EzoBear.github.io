@@ -68,3 +68,4 @@ pagination:
     sort_field: "date"
     sort_reverse: true
 
+disqus_shortname: EzoBear's Research Note
