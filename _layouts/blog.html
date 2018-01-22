@@ -20,6 +20,6 @@ layout: default
 		{%- capture _excerpt -%}<p>{{- _post.excerpt | strip_html | truncatewords: 100 -}}</p>{%- endcapture -%}
 		{%- capture _link -%}<a href="{{- _post.url | absolute_url -}}">read more</a>{%- endcapture -%}
 		{%- assign _content = _excerpt | append: _link -%}
-		<!--{%- include section.html title=_title subtitle=_subtitle content=_content -%}-->
+		{%- include section.html title=_title subtitle=_subtitle content=_content -%}
 	{%- endfor -%}
 </div>
