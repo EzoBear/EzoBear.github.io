@@ -58,4 +58,13 @@ google_analytics:
 theme: jekyll-theme-prologue
 collections: [sections]
 
-paginate: 3
+gems:
+    - jekyll-paginate
+
+pagination:
+    enabled: true
+    per_page: 2
+    limit: 0
+    sort_field: "date"
+    sort_reverse: true
+
