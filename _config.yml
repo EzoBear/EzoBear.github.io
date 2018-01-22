@@ -30,13 +30,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Development Notes
-subtitle: with GitHub
+title: Young-Jun Kim
+subtitle: Integrated ph.D courses
 description: >- # this means to ignore newlines until "baseurl:"
-  This is the demo site for a Jekyll theme version of
-  HTML5 UP's sleek, responsive site template Prologue.
-author: Your Incredible Name
-email: your-email@example.com
+author: Young-Jun Kim
+email: yjk931004@gmail.com
 avatar: assets/images/avatar.jpg
 
 # You'll want to customize url and baseurl for your own site:
@@ -44,8 +42,8 @@ baseurl:  # the subpath of your site, e.g. /blog
 url:  # the base hostname & protocol for your site
 
 # Social settings
-facebook_url:
-github_url:
+facebook_url:https://www.facebook.com/profile.php?id=100003536724805
+github_url:https://github.com/EzoBear
 googleplus_url:
 instagram_url:
 linkedin_url:
