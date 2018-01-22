@@ -6,7 +6,7 @@ layout: default
 <!-- Main -->
 <div id="main">
 	{%- if page.content != "" -%}
-		{%- include category.html title=page.title photo=page.cover-photo photo-alt=page.cover-photo-alt auto-header=page.auto-header content=page.content -%}
+		{%- include section.html title=page.title photo=page.cover-photo photo-alt=page.cover-photo-alt auto-header=page.auto-header content=page.content -%}
 	{%- endif -%}
 	<!-- Posts List -->
 	{%- for _post in _posts -%}
