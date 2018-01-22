@@ -58,3 +58,4 @@ google_analytics:
 theme: jekyll-theme-prologue
 collections: [sections]
 gems jekyll-paginate
+paginate: 5
