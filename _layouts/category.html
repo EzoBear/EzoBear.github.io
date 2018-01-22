@@ -1,11 +1,6 @@
 ---
 layout: page
 ---
-enabled: true
-per_page: 2
-limit: 0
-sort_field: "date"
-sort_reverse: true
 
 {% for post in site.categories[page.category] %}
     <div class="post-list">
@@ -27,7 +22,7 @@ sort_reverse: true
         {% endif %}
 
         {% for page in (1..paginator.total_pages) %}
-            {% if page == paginator.page %}
+            {% if page == paginator.per_page %}
                 <em>{{ page }}</em>
 
             {% elsif page == 1 %} 
