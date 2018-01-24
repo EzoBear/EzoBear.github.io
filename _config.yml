@@ -39,7 +39,7 @@ avatar: assets/images/MyProfile.jpg
 
 # You'll want to customize url and baseurl for your own site:
 baseurl:  # the subpath of your site, e.g. /blog
-url:  # the base hostname & protocol for your site
+url: # the base hostname & protocol for your site
 
 # Social settings
 facebook_url: "https://www.facebook.com/profile.php?id=100003536724805"
@@ -55,5 +55,18 @@ twitter_url:
 google_analytics:
 
 # The following settings are NECESSARY for the Prologue theme to run:
-remote_theme: chrisbobbe/jekyll-theme-prologue
+theme: jekyll-theme-prologue
 collections: [sections]
+
+gems:
+    - jekyll-paginate-v2
+
+pagination:
+    enabled: true
+    per_page: 2
+    limit: 0
+    sort_field: "date"
+    sort_reverse: true
+
+disqus_url: https-ezobear-github-io.
+disqus_id: EzoBear's Research Note
