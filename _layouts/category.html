@@ -6,10 +6,10 @@ layout: page
     <div class="post-list">
         <h4>
             <a href="{{ post.url }}" class="link-post_list">{{ post.title }}</a>
-   
-            <p class="post-meta"><small>{{ post.date | date: "%b %d, %Y" }} by {{ post.author }}</small></p>
- 
         </h4>
+        <h8>
+            <p class="post-meta">{{ post.date | date: "%b %d, %Y" }} by {{ post.author }}</p>
+        </h8>
     </div>
 {% endfor %}
 
