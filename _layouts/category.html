@@ -4,12 +4,8 @@ layout: page
 
 {% for post in site.categories[page.category] %}
     <div class="post-list">
-        <h2><a href="{{ post.url }}" class="link-post_list">{{ post.title }}</a></h2>
+        <h4><a href="{{ post.url }}" class="link-post_list">{{ post.title }}</a></h4>
         <p class="post-meta">{{ post.date | date: "%b %d, %Y" }} by {{ post.author }}</p>
-        <div class="post-list-content">
-            {{ post.excerpt | truncatewords: 45, '...' }}
-            <p class="text-right"><a href="{{ post.url }}">read more...</a></p>
-        </div>
     </div>
 {% endfor %}
 
