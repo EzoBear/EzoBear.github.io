@@ -1,5 +1,5 @@
 ---
-title: [Patternn Recognition]Definition
+title: Patternn Recognition-Definition
 author: EzoBear
 layout: post
 category: PatternRecognition
