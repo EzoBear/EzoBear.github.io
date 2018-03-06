@@ -2,7 +2,7 @@
 title: [Patternn Recognition]패턴인식 개요
 author: EzoBear
 layout: post
-category: Diary
+category: PatternRecognition
 ---
 본 포스팅은 Index와 같이 구성되며, Pattern Recognition의 전체적인 개념과 흐름에 대한 개요만을 다룹니다. 세부적인 요소들은 차후 따로 포스팅 예정입니다.
 <h2>Index</h2>
