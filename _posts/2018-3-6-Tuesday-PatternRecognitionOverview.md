@@ -1,5 +1,5 @@
 ---
-title: [Patternn Recognition]패턴인식 개요
+title: Patternn Recognition Overview
 author: EzoBear
 layout: post
 category: PatternRecognition
