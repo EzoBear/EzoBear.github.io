@@ -34,14 +34,33 @@ category: PatternRecognition
 
 1.R. Schalkoff et al, "Pattern Recognition. Statistical, Structural, and Neural Approaches"에서는 "The science that concerns the description or classification(recognition) of measurements" 라 정의했습니다. 이를 통해 뭔지는 모르겠지만 무언가의 척도의 설명이나 분류와 관련된 학문이라는 것을 알 수 있습니다. 
 
-2.Samuel F.B Morse는 "Pattern Recognition is concerned with answering the question "What is this?" 라고 패턴인식에 대해 정의했습니다. 이는 저희가 정의했던것보다 더 추상적이지만 하고자 하는 목적은 명확합니다. 이를 좀 더 명확하게 표현한 정의들을 살펴보겠습니다.
+2.Samuel F.B Morse는 "Pattern Recognition is concerned with answering the question "What is this?" 라고 패턴인식에 대해 정의했습니다. 이는 저희가 정의했던것보다 더 추상적이지만 하고자 하는 목적은 명확합니다.
 
-4.3."The process of giving names w to observations x"(J. Schuermnn)
-4."The assignment of a physical object or event to one of several prespecified categories"(Duda, Hart, Stork)
-5."Given some examples of complex signals and the correct descions for them, make decisions automatically for a stream of future examples"(B. Ripley,1996)
-6."A problem of estimating density function in a high-dimensional space and dividing the space into the regions of categories or classes"(Keinosuke Fukunalga)
+3."A problem of estimating density function in a high-dimensional space and dividing the space into the regions of categories or classes"(Keinosuke Fukunalga)
+(다차원 공간 내에서 밀도함수를 추정하고, 공간을 카테고리 혹은 클래스 영역으로 분리하는 문제)
+이를 좀더 수학적으로 표현해보면 3번과 같이 표현할 수 있습니다.
 
-작성 중
+이를 의미론 적으로 정의한 정의를 몇가지 살펴보면
+4."The process of giving names w to observations x"(J. Schuermnn)
+5."The assignment of a physical object or event to one of several prespecified categories"(Duda, Hart, Stork)
+6."Given some examples of complex signals and the correct descions for them, make decisions automatically for a stream of future examples"(B. Ripley,1996)
+4,5.6을 잘 종합해보면 관측값 x에 이름 w를 부여한뒤,
+물리적 객체 혹은 사건에 이미 정해진 몇 카테고리인 w로 할당하고,
+미래에 표본들에 대하여 자동적으로 결정을 내리하게 하는 것.
+이라고 생각할 수 있습니다.
+
+즉, 패턴인식이란 관측값 x에 이름w를 부여한 뒤, 물리적 객체 혹은 사건에 이미 정해진 몇 카테고리인 w로 할당하고, 미래에 표본들이 생겼을때, 이를 자동으로 분류하는 것 이라고 말할 수 있습니다. 이는 다차원 공간 내에서 밀도함수를 추정하는 것으로 이루어지는 것이고요.
+
+살펴보듯 정의는 다양하게 이루어져 있지만 결국 패턴을 찾아내고, 패턴을 분류하여 패턴에 이름 붙이는 것이 가장 중요한 키 포인트입니다.
+
+그렇다면 패턴이라는 것은 무엇일까요?
+<a>
+<h2>Pattern</h2><br>
+패턴은 여러분도 잘 알듯 일정하게 반복되는 특징의 집합 정도로 표현하면 아마 큰 무리가 없을겁니다. 그렇다면 특징이란 무엇일까요? 특징은 다른 것과 구분되는 점이지요. 즉, 패턴인식에서는 분류할 대상이 되는 객체를 구분할 수 있는 aspect, quality,feature 쯤 될것입니다. 예를들어 은행잎인지, 단풍잎인지 를 구분한다하면, 노란색이면 은행나무, 붉은색이면 단풍나무일겁니다. 이렇듯 색깔과 같은 상징적인 것이 될 수 있습니다. 또 다른 예시를 들어보면 돌맹이와 바위를 구분한다고 하면, 높이,면적,무게와 같은 수치적인 것들이 될수도 있겠네요.또다른 예시를 들어보겠습니다.
+참치와 고등어를 구분한다고 치면, 참치는 크고, 고등어는 작습니다.(크기,길이 넓이) 다른 특징으로는 고등어는 등이 푸르네요, 참치는 그렇지 않네요(색깔).
+이렇듯 상직적인 특징과 수치적인 특징은 복합적으로도 사용될 수 있습니다.
+
+
 Reference
 [1]한학용, 패턴인식 개론 : Matlab 실습을 통한 입체적 학습, pp 27
 
