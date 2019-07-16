@@ -2,7 +2,9 @@
   {%- if site.google_analytics and jekyll.environment == 'production' -%}
     {%- include google_analytics.html -%}
   {%- endif -%}
-  
+  {% if page.use_math %}
+    {% include mathjax_support.html %}
+  {% endif %}
   <!-- Robots -->
   <meta name="robots" content="{{- page.robots | default: 'index, follow' -}}" />
   {%- unless page.canonical == false -%}<link rel="canonical" href="{{- page.url | absolute_url -}}" />{%- endunless -%}
