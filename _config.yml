@@ -67,6 +67,10 @@ pagination:
     limit: 0
     sort_field: "date"
     sort_reverse: true
-
+    markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 disqus_url: https-ezobear-github-io.
 disqus_id: EzoBear's Research Note
