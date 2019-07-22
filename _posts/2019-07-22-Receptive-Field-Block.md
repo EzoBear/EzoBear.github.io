@@ -1,0 +1,85 @@
+---
+layout: post
+title: Receptive Field Block Net for Accurate and Fast
+Object Detection
+date: 2019-07-22 14:47
+category: Ojbect Detection
+author: Ezobear
+tags: [Object Detection, SSD, RFB]
+summary: 딥러닝 Detector는 Backbone network에 영향을 많이 받습니다. Resnet, Inception 같은 powerful한 network 는 reature representations이 강하지만, high computational cost를 갖습니다. 본 연구에서는 이러한 문제를 개선하기 위해 ligthweight backbone에 hand-crafted mechanism으로 만들어진 RFBlock을 플러그인 함으로써 가벼움을 유지한채 robustness하고 discriminability를 갖는 feature를 만드는 Detector를 쉽게 Build up 할 수 있다고 주장하였습니다.
+---
+
+Title
+=============
+<a href="https://arxiv.org/pdf/1711.07767.pdf">Receptive Field Block Net for Accurate and Fast Object Detection(ECCV 2018)</a><br>
+Opitial Code in Github : https://github.com/ruinmessi/RFBNet
+
+Introduction
+=============
+
+<img src="https://github.com/EzoBear/EzoBear.github.io/blob/master/assets/images/post_images/2019-07-22-Receptive-Field-Block/figure1.png?raw=true" alt="Figure1">
+
+본 논문에서는 기존의 Faster-RCNN, Mask RCNN과 같은 Two Stage Detector의 경우에는 Backbone Network에 종속적이라는 한계가 있다고 주장하였습니다.<br>
+
+Two Stage Detector는 RPN을 사용해 Region Proposal을 수행하지만, 이는 Backbone Network에 종속적이라는 점과 Classification 또한 RPN에서 Proposal된 Bounding Box를 기준으로 Classification하기 때문에 이 또한 Backbone Network에 종송적이라는 점입니다. 따라서 Backbone Network의 성능이 중요하기 때문에 Backbone Network는 Resnet, Inception과 같이 무거워질 수 밖에 없고 이는 안그래도 무거운 Network를 더 무겁게 한다고 하였습니다.<br>
+
+따라서 이러한 문제를 해결하기 위해 One Stage Detector(SSD,Yolo) 등이 발명되었는데, 이러한 One Stage Detector의 State of Art 또한 Resnet과 같은 무거운 Backbone으로부터 나옵니다. 저자는 이러한 한계를 개선하기 위해 light-weight backbone으로부터 feature를 강화하는 RFB(Receptive Field Block) Module을 제안하였습니다.
+
+위의 그림은 Human visual system에서 Receptive Field의 Properties입니다. 저자는 이러한 Human visual system의 특성에서 영감을 받아 RFB Module을 개발하였는데, 저자는 ligthweight backbone에 hand-crafted mechanism으로 만들어진 RFBlock을 플러그인 함으로써 가벼움을 유지한채 robustness하고 discriminability를 갖는 feature를 만드는 Detector를 쉽게 Build up 할 수 있다고 주장하였습니다. 아래 표는 RFB Module을 SSD에 적용한 결과입니다.<br>
+
+이때 본 논문에서는 저자들이 3가지 관점에서 RFB Module을 실험하게 됩니다.<br>
+
+1. light-weight CNN network의 features를 향상시키기 위해 human visual system의 eccentricity와 term size를 모사하여 RFB Module의 시뮬레이션을 진행합니다.<br>
+2. RFB Net 기반 Detector를 설계하고, 간단하게 SSD의 top layer을 변경하는 것만으로, 속도는 여전히 유지한채 성능을 증가시키는 것을 보여줍니다.<br>
+3. RFB Network가 VOC Dataset에서 State of Art임을 보이고, VGG뿐만 아니라 Mobilenet에 적용하고, COCO에서 Train&Test 함으로써 일반화능력을 제시합니다.<br>
+
+<img src="https://github.com/EzoBear/EzoBear.github.io/blob/master/assets/images/post_images/2019-07-22-Receptive-Field-Block/figure2.png?raw=true" alt="Figure2">
+
+위 표는 논문의 표로 SSD에 RFB를 Plug in 시킨 결과입니다. 먼저 SSD300을 보면 VGG Backbone을 사용하고있습니다. 이때 약 12ms의 Inference Time과 25.1%의 mAP를 갖습니다. 여기에 RFB Module을 Plug in 하면 inference time은 약 3ms 밖에 안늘어나는데 비해 mAP는 약 5.2%정도 증가하고있습니다. SSD300이 각 Object Szie에 대해 표기가 없어 각 Size 별로 얼마나 오르는지는 확인할 수 없으나 평균적으로는 굉장히 크게 증가하고 있습니다. 
+
+<img src="https://github.com/EzoBear/EzoBear.github.io/blob/master/assets/images/post_images/2019-07-22-Receptive-Field-Block/figure3.png?raw=true" alt="Figure3">
+
+위의 표는 Github의 Opitial Code에 대한 결과표입니다.  
+각 데이터세트 별로 증가량을 확인할 수 있습니다. 여기서 주목해야할 점은 FPS입니다. VOC를 기준으로 보면 Original SSD가 46FPS인 반면에 RFB를 Plug in할 경우 mAP 뿐만 아니라 FPS도 증가하고있습니다. 이는 직접 테스트해보지는 않아서 확인이 필요하겠습니다만, 이전 유사한 실험 사례를 통해 추측을 해보려고합니다. 
+
+
+* 주의 : 단순 저의 추측입니다. <br>
+>RFB모듈을 Plug in 함으로써 backbone 쪽에 ms 가 증가하였지만 좀 더 robustness하고 discriminability를 갖는 feature를 뽑아낼 수 있습니다. 이는 Detection Layer에서 classification의 성능을 올렸을 것이라 추측할 수 있습니다. Detection Layer에서는 이러한 classification의 결과를 기반으로 특정 Treshold 이상만 고려하게 됩니다. 이때 classification의 성능이 증가했다면, false positive와 true negative의 개수를 줄이게됩니다. 따라서 nms이전에 Treshold에서 이들의 개수가 감소함으로써, nms time 또한 감소시킬 수 있을것이라 생각합니다. 따라서 증가하는 network의 inference time은 3ms인데 반해 감소하는 nms time이 크기때문에 전체 FPS는 증가할 수 있는 것이라 추측할 수 있습니다.
+
+RFB Module의 자세한 방법에 대한 설명은 아래와 같습니다.<br>
+
+Receptive Filed Block Network
+=============
+
+<img src="https://github.com/EzoBear/EzoBear.github.io/blob/master/assets/images/post_images/2019-07-22-Receptive-Field-Block/figure4.png?raw=true" alt="Figure4">
+
+위의 그림의 경우 RFB Network의 Concept입니다. 그림1에서 Human visual system을 모사하기 위해 n by n Conv을 먼저 수행하고, n 만큼의 rate를 준 3by3 kernel을 갖는 conv를 수행합니다. 이해의 도움을 주기 위해 더하기 표시로 되어있으나 실제 구현체를 보면 그냥 passing 합니다. 이렇게 multi-scale의 feature들을 뽑아낸 뒤 concat하고, shortcut을 수행합니다. 이때 자세한 방법은 아래에서 설명합니다.<br>
+
+## 1. Visual Cortex Revisit
+
+<img src="https://github.com/EzoBear/EzoBear.github.io/blob/master/assets/images/post_images/2019-07-22-Receptive-Field-Block/figure5.png?raw=true" alt="Figure5">
+
+먼저 Human Visual Cortex를 모사하기 위한 시도는 저자들의 RFB Module가 처음이 아니었습니다. 따라서 저자들의 RFB Module을 보기 앞서 그 전의 다른 Module들과의 비교를 보고가겠습니다. 위의 그림은 4가지의 각기 다른 Spatial RF Module입니다. (a)의 경우 Inception에서 사용한 Inception Module이고, (b)는 ASPP에서 사용한 daisy-like pooling configuration 입니다. (c)는 object들의 기하학적 특성을 반영한 adopts deformable convolution으로 복잡한 transformation에 강인한 Convolution 방법입니다. (d)는 본 논문에서 제안하는 RFB Module로써, (a)와 (b)를 적절하게 조합한 module의 형태입니다. 실제 실험에서도 공정한 비교를 위해 Inception과 ASPP의 Configuration을 갖고 실험을 진행합니다. github에는 성능향상을 위해 여러 tweak version들이 존재합니다.<br>
+
+## 2. Receptive Field Block
+
+<img src="https://github.com/EzoBear/EzoBear.github.io/blob/master/assets/images/post_images/2019-07-22-Receptive-Field-Block/figure6.png?raw=true" alt="Figure6">
+
+위의 그림은 Receptive Filed Block의 Architecture입니다. Inception Module의 구조와 Dasiy-like pooling의 Configuration을 적절하게 섞었기 때문에 기본 Block의 모양은 Inception Module과 같습니다. 이때 Hyper Parameter 값이 Dasiy-like pooling을 따르게 됩니다. 전체적인 흐름은 다음과 같습니다. 이전 Layer에서 output된 feature map이 short-cut(Basic Conv)를 통해 Convolution되고, 이와 동시에 RFB Block을 통해 들어갑니다. 각각 병렬적으로 수행된 결과는 Concat되고, 그 결과는 Hyper Parameter로 받은 scale만큼 가중되어 short-cut의 결과와 더해지게 됩니다. 자세한 블록은 그림을 참고하시면 됩니다.<br>
+
+## 3. RFB Net Detection Architecture
+
+<img src="https://github.com/EzoBear/EzoBear.github.io/blob/master/assets/images/post_images/2019-07-22-Receptive-Field-Block/figure7.png?raw=true" alt="Figure7">
+
+이러한 RFB Block을 SSD에 적용한 Architecture입니다. 기존의 SSD와 같은 구조에 첫번째, 두번째 Layer에서 나온 가장 큰 Feature map을 RFB와 RFB_S를 사용하여 새로운 Feature Map을 뽑습니다. 주의할 점은 기존의 Feature map 또한 그대로 Detection Layer로 입력해주고, 새로 뽑은 Feature map 또한 같이 입력해주어야 한다는 점입니다. 저는 그림만 보고 구현하다 RFB Module의 Feature map 만을 사용하고, 기존의 feature map을 사용하지 않아 재현하는데 시간을 좀 많이썼습니다...<br>
+
+## 4. Tweaked RFB
+
+RFB Module은 현재 SSD 기반의 Github Project에서 많이 사용되고있습니다. 따라서 여러 Tweaked Version들이 많은데, 먼저 Opitial Code에서 Tweak한 RFB_a version이 있습니다.
+이러한 RFB_a를 기반으로 short-cut을 수행하지 않고 original tensor와 concat을 하는 RFB_a_lite version도 있고, 중간중간 Basic Conv에서 in_planes와 out_planes에 Attention Mask를 적용하여 사용하는 version도 있습니다. 다양한 version의 RFB Module을 참고하여 연구에 적용해볼 수 있을듯 합니다.<br>
+
+## 5. Discussion
+RFB Module의 경우 현재 SSD 기반의 light-weight backbone을 사용하는 Detector Project에서는 이미 성능이 입증되어 많이 활용하고있습니다. 다만 Densenet과 Resent과 같이 무거운 Backbone Network에서는 사용된 보고나 성능지표 등이 많이 부족한 실정입니다. 따라서 만약 light-weight backbone을 사용하고있다면, 바로 적용해볼만하나, High Computational Backbone을 사용하는 경우에는 Ablation Study가 필요할듯합니다.<br>
+
+
+
