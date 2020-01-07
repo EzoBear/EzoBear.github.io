@@ -1,8 +1,8 @@
 ---
 layout: page
-title: About YoungJun Kim
+title: About
 permalink: /about/
-feature-img: "assets/img/sample_feature_img_1.png"
+feature-img: "assets/img/sample_feature_img_3.png"
 ---
 
 Education
