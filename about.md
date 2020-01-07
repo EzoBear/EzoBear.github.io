@@ -11,7 +11,7 @@ YoungJun Kim received the B.S. degrees, in Computer Engineering from Korea Polyt
 YoungJun Kim is currently carrying out a integrated Ph. D. program from Sungkyunkwan University University<br>
 His research interests include object detection architecture and model compression method for real-time system, in image processing using deep learning
 
-Lecture experience
+Lecture Experience
 ===================
 성균관대학교 스마트팩토리학과 기초프로그래밍 정규과목<br>
 성균관대학교 스마트팩토리학과 응용프로그래밍 정규과목<br>
