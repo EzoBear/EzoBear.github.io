@@ -23,12 +23,28 @@ Lecture experience
 
 Publications
 ====================
+<h4>MSLab</h4>
+-김영준,황혜경,신지태, "Receptive Filed Steam Block을 이용한 실시간 객체검출 기법", 한국통신학회 동계종합학술발표회[Accepted]
+-김영준,정희윤,황혜경,신지태, "Controllable & Interpretable 혐오 발언 검출기", 한국통신학회 동계종합학술발표회[Accepted]
+-김영준, 황혜경, 신지태, "Optimization of Object Detection and Inference Time under Autonomous Driving"(	자율주행 환경에서 딥러닝 기법의 객체 검출과 속도 성능 최적화), Journal of Korean Institute of Communications and Information Sciences[Under Review]
+
+-Youngjun Kim, En Han, Hyekyoung Hwang, Yeongsang An, Jitae Shin, "Dietary Habits Improvement Based on Artificial Intelligence ( 인공지능 기반 식생활 습관 개선 다이어트 애플리케이션)," Journal of Korean Institute of Communications and Information Sciences Vol.44 No.08, Aug. 2019.
+-김영준, 한은, 안영상, 신지태, "Avocado : 인공지능 기반 습관 성형 다이어트," 한국통신학회 동계종합학술발표회, Jan. 25, 2019.
+-김영준, 한은, 안영상, 신지태, "Avocado : 딥 러닝 기반 다이어트 다이어리 애플리케이션 입력 인터페이스," 한국통신학회 동계종합학술발표회, Jan. 25, 2019.
+
+<h4>H-Lab</h4>
+-Suzi Choi, Young Jun-Kim ect, Designing Conversational Voice User Interface for Improving Intimacy of Shared Invehicle, UbiComp/ISWC'18 Adjunct, 2018 <br>
+		
+<h4>IMS-Lab</h4>
+-Young Jun Kim, Jeong Min Park, Sung Taek Chung and Jeong Joon Kim, 2018. Keyword-Based Collaborative Filter Recommendation System Using Scraping. Journal of Engineering and Applied Sciences, 13: 1506-1514. <Scopus><br> 
+
+-Young Jun-Kim al "Personalized Recommendation System for Efficient Integrated Cognitive Rehabilitation Training based on Bigdata", HCII, 2018<br>
+
+-김영준 외 3 "HCI기반의 인지 훈련 통합 시스템 개발", 한국 멀티미디어학회 추계 학술대회, 2017, 11<br>
 
 Project
 ====================
-
-
-<h4>MSL-Lab</h4>
+<h4>MSLab</h4>
 
 자율주행 환경에서 고 난이도 상황중심의 딥러닝 기반과 희소성 표현 기반의 영상처리 기술 [Image processing techniques based on deep learning and sparse representation in highly difficult situations for self-driving cars]
        <small>-과학기술정보통신부-한국연구재단(NRF)</small><br>
