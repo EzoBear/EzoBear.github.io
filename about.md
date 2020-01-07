@@ -28,7 +28,7 @@ Project
 ====================
 
 
-<h3 MSL-Lab/>
+<h4>MSL-Lab</h4>
 
 자율주행 환경에서 고 난이도 상황중심의 딥러닝 기반과 희소성 표현 기반의 영상처리 기술 [Image processing techniques based on deep learning and sparse representation in highly difficult situations for self-driving cars]
        <small>-과학기술정보통신부-한국연구재단(NRF)</small><br>
@@ -43,10 +43,11 @@ Bone-age estimation using hand X-ray image
 CCTV 영상에 대한 Deep Learning 기반 영상 프레임 분석 기능 실증 [in KOREN SDI 기반 오픈플랫폼 실증]
       <small>한국정보화진흥원</small><br>
       
-<h3 Niches/>
+<h4>Niches</h4>
 2018 기술혁신형 창업기업 지원사업
       <small>-한국핀테크 지원센터</small><br>
-<h3 H-Lab/>
+
+<h4>IMS-Lab</h4>
 시각장애인을 위한 전시예술품 비시각 정보전달 인터페이스 개발 및 문화향유권 권리확대를 위한 당사자 관점 연구
 	    <small>-원천기술개발사업</small><br>
 
