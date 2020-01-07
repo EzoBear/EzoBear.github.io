@@ -1,12 +1,30 @@
 ---
 layout: page
-title: About
+title: About YoungJun Kim
 permalink: /about/
-feature-img: "assets/img/sample_feature_img_2.png"
+feature-img: "assets/img/sample_feature_img_1.png"
 ---
 
-Type Theme is a free and open-source theme for [Jekyll](http://jekyllrb.com/), licensed under the MIT License.
+Education
+===================
+YoungJun Kim received the B.S. degrees, in Computer Engineering from Korea Polytechnic University University in 2018.2
+YoungJun Kim is currently carrying out a integrated Ph. D. program.
+His research interests include object detection architecture and model compression method for real-time system, in image processing using deep learning.
 
-Head over to the [theme's documentation](https://rohanchandra.github.io/project/type/) for much more information about Type Theme or to install this theme on your own Jekyll site.
+Publications
+====================
 
-This file is an example of a page in Jekyll, that automatically shows up in the header navigation, you can delete or modify this file freely.
+Project
+====================
+
+Lecture experience
+===================
+성균관대학교 스마트팩토리학과 기초프로그래밍 정규과목
+성균관대학교 스마트팩토리학과 응용프로그래밍 정규과목
+중소기업 벤처사업부 사업 관련 최신 논문 및 연구동향 조사 및 발표
+인천 영재고 밸런싱 로봇 및 자율주행자동차 교육
+서울 영일고 밸런싱 로봇 교육
+신사중학교 4차산업혁명 교육
+경기 자동차 과학 고등학교 모바일 프로그래밍 교육
+
+
