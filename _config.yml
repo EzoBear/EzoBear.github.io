@@ -18,15 +18,15 @@ theme_settings:
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
   # Icons
-  rss: false
+  rss: true
   email_address: yjk931004@gmail.com # Full email address, e.g. "sam@example.com"
   behance: 
   bitbucket:
   dribbble:
-  facebook: "https://web.facebook.com/profile.php?id=100003536724805"
+  facebook: "profile.php?id=100003536724805"
   flickr:
   gitlab:
-  github: "https://github.com/EzoBear"
+  github: "EzoBear"
   gitter:
   google_plus:
   instagram:
@@ -42,7 +42,7 @@ theme_settings:
   youtube:
 
   # Scripts
-  google_analytics: UA-113204721-1 # Tracking ID, e.g. "UA-000000-01"
+  google_analytics: # Tracking ID, e.g. "UA-000000-01"
   disqus_shortname:
   katex: true # Enable if using math markup
   search: false # Enable the search feature
