@@ -17,6 +17,7 @@ Publications
 Project
 ====================
 
+
 Lecture experience
 ===================
 성균관대학교 스마트팩토리학과 기초프로그래밍 정규과목<br>
