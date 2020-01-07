@@ -12,7 +12,7 @@ theme_settings:
   description: "Deep Learning 블로그" # used by search engines
 
   # Header and footer text
-  header_text: >
+  header_text: 
   <h1 Hello, Ezobear's Research Note/>
  
   header_text_feature_image:
