@@ -13,7 +13,7 @@ theme_settings:
 
   # Header and footer text
   header_text: >
-     #Hello, Ezobear's Research Note 
+     <h1>Hello, Ezobear's Research Note</>
   header_text_feature_image:
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
