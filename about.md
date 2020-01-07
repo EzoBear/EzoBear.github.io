@@ -8,7 +8,7 @@ feature-img: "assets/img/sample_feature_img_1.png"
 Education
 ===================
 YoungJun Kim received the B.S. degrees, in Computer Engineering from Korea Polytechnic University University in 2018.2<br>
-YoungJun Kim is currently carrying out a integrated Ph. D. program<br>
+YoungJun Kim is currently carrying out a integrated Ph. D. program from Sungkyunkwan University University<br>
 His research interests include object detection architecture and model compression method for real-time system, in image processing using deep learning
 
 Lecture experience
