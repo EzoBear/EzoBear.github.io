@@ -13,8 +13,7 @@ theme_settings:
 
   # Header and footer text
   header_text: >
-  Ezbear의 기술블로그입니다. 
-  주로 딥러닝을 이용한 Object Detection과 Mobile 환경에서의 딥러닝 테크닉에 관심이 많습니다.
+  <h1>Hello, Ezobear's Research Note</>
  
   header_text_feature_image:
   footer_text: >
