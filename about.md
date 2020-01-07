@@ -50,7 +50,7 @@ medical diagnosis platform )
 - Bone-age estimation using hand X-ray image
       <small>-중소벤처기업부</small><br>
 - CCTV 영상에 대한 Deep Learning 기반 영상 프레임 분석 기능 실증 [in KOREN SDI 기반 오픈플랫폼 실증]
-      <small>한국정보화진흥원</small><br>
+      <small>-한국정보화진흥원</small><br>
       
 <h4>Niches</h4>
 - 2018 기술혁신형 창업기업 지원사업
