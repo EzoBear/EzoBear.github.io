@@ -5,7 +5,7 @@ url: "https://ezobear.github.io/"
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Posts
+  title: Note
   avatar: assets/img/avatar.png
   favicon: assets/favicon.ico
   gravatar: 0c3db4af5ad28d7dab96da8f8aa4a5b7# Email MD5 hash
