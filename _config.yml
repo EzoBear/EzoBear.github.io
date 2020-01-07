@@ -18,7 +18,7 @@ theme_settings:
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
   # Icons
-  rss: true
+  rss: false
   email_address: yjk931004@gmail.com # Full email address, e.g. "sam@example.com"
   behance: 
   bitbucket:
