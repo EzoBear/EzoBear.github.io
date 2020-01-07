@@ -1,137 +1,298 @@
-# Prologue - Jekyll Theme
+# Type Theme
 
-[![Gem Version](https://badge.fury.io/rb/jekyll-theme-prologue.svg)](https://badge.fury.io/rb/jekyll-theme-prologue)
+![Default Type Theme blog](https://user-images.githubusercontent.com/816965/30518919-d5978024-9bcd-11e7-81b3-3dd07e99a1f9.png)
 
-![Prologue Theme](assets/images/screenshot.png "Prologue Theme Screenshot")
+A free and open-source [Jekyll](https://jekyllrb.com) theme. Great for blogs and easy to customize.
 
-This is Prologue, a simple, single page responsive site template from [HTML5 UP](https://html5up.net/prologue), now available as a blog-aware Jekyll theme from [Chris Bobbe](https://chrisbobbe.github.io). It features a clean, minimalistic design and a sticky sidebar with navigation-linked scrolling.
+[Demo](https://rohanchandra.github.io/type-theme/)
 
-**Demo**: https://chrisbobbe.github.io/jekyll-theme-prologue/
+## Usage
 
-# Added Features
+1. Fork and clone the [Type Theme repo](https://github.com/rohanchandra/type-theme): `git clone https://github.com/rohanchandra/type-theme`
+2. [Install Jekyll](https://jekyllrb.com/docs/installation/): `gem install jekyll`
+3. Install the theme's dependencies: `bundle install`
+4. Customize the theme (see below)
+5. Run the Jekyll server: `jekyll serve`
 
-* **Blogging and multi-page features you expect from Jekyll**
-* Compatible with GitHub Pages
-* **[Formspree.io](https://formspree.io/) contact form integration** - just add your email to the `_config.yml` and it works!
-* Build your homepage with **custom scrolly sections** in the _sections folder
- * Set a **cover photo** for any section (not just the first), with alt text for screen readers and SEO
-* Add your **social profiles** easily in `_config.yml`.
-* Automatic search engine optimization (SEO) **meta tags** based on info you provide in `_config.yml` and frontmatter
-* **Google Analytics** built-in; just put your [Tracking ID](https://support.google.com/analytics/answer/1008080?hl=en) in `_config.yml` as `google_analytics`
-* Custom **404 page** (called 404.html; to activate, move it to your project directory).
+## Customizing Type Theme
 
-# Installation
+Open `_config.yml` in a text editor to change most of the blog's settings.
 
-There are two ways to get started (choose one):
+If a variable in this document is marked as "optional", disable the feature by removing all text from the variable. For example, to prevent the avatar from rendering in the header, the avatar line should read:
 
-1. **Install the [jekyll-theme-prologue gem](https://rubygems.org/gems/jekyll-theme-prologue).** Instructions are in the [Jekyll docs](https://jekyllrb.com/docs/themes/#installing-a-theme). After running `bundle install`, you can find the theme files by running `open $(bundle show jekyll-theme-prologue)`.  A sample working `_config.yml` file ships with the gem; if you want to activate it, move it to your project's root directory. It will do nothing until you move it there, replacing the default `_config.yml` file.
-2. **Fork or clone the [GitHub repository](https://github.com/chrisbobbe/jekyll-theme-prologue).** If you want to use [GitHub Pages](https://pages.github.com/), create a branch named `gh-pages`, and replace `theme: jekyll-theme-prologue` with `remote_theme: chrisbobbe/jekyll-theme-prologue` in the provided `_config.yml` ([GitHub Pages now supports open-source themes on GitHub](https://github.com/blog/2464-use-any-theme-with-github-pages)).
-
-Next, make sure that `url` and `base_url` are set for your own website in `_config.yml`. For local testing, make them both blank. Add a photo avatar to your project, then set `avatar: path/to/your/avatar.jpg` in _config.yml; for example, `avatar: assets/images/avatar.jpg` (48x48 pixels works best). Poke around the sample `_config.yml` file to see how you can add your social profiles.
-
-# Build your homepage
-
-1. **Your `_config.yml` file must include the following line or your homepage won't work**: `collections: [sections]`. This tells Jekyll to look in the _sections folder (which you will create) for your content and render it all on one page.
-
-2. **Create a `_sections` folder** in your project's root directory and start adding content to your homepage. Set a cover photo in any of the sections by adding `cover-photo: path/to/photo.jpg` and `cover-photo-alt: your alt text here` to the section's frontmatter. Sample content is provided in the [GitHub repository](https://github.com/chrisbobbe/jekyll-theme-prologue/tree/master/_sections).
-
-All new sections should be added as html or Markdown documents in the `_sections` folder. The following section variables can be set with [frontmatter](https://jekyllrb.com/docs/frontmatter/):
-- `title` (required)
-- `order` (required; orders the sequence of sections on the page. Example: `1`)
-- `cover-photo` (optional; sets a background image for the section. Example: `assets/images/banner.jpg`)
-- `cover-photo-alt` (required if using a cover photo. Describes the photo for screen readers and SEO; e.g. "Dome of Light art installation, Kaohsiung, Taiwan")
-- `icon` (optional; see [Font Awesome](http://fontawesome.io/icons/) for icon codes. Example: `fa-github`)
-- `auto-header` (optional; "use-title" is default, "none" for no header, or custom header text)
-- `hide` (optional; if `true`, the section won't appear)
-
-# Start blogging!
-
-Jekyll has great resources to get you started writing blog posts. Check out [this Jekyll Docs page](https://jekyllrb.com/docs/posts/) first. When you've written a post or two, copy the following into a new file in your project directory called `blog.html`, and you'll see a link to your blog from the homepage:
-
-```
----
-layout: blog
-title: My Blog
----
+```yml
+theme:
+  title: Type Theme
+  avatar:
+  gravatar:
 ```
 
--- and that's it!
+Notice the avatar variable is left intentionally blank.
 
-# Add a page
+Below is a summary of the configuration options in Type Theme.
 
-To add a page, just make a new .html or .md file in your project directory. There's an example called `reading-list` [provided](https://github.com/chrisbobbe/jekyll-theme-prologue/blob/master/reading-list.md) with the GitHub repository. Add this frontmatter:
+### Site configuration
+The most common configurations, included here for guidance, are:
 
+Jekyll website *without* a subpath (such as a GitHub Pages website for a given username):
+
+```yml
+# SITE CONFIGURATION
+baseurl: ""
+url: "https://username.github.io"
 ```
+
+Jekyll website *with* subpath (like the Type Theme demo page):
+
+```yml
+# SITE CONFIGURATION
+baseurl: "/sub-directory"
+url: "https://username.github.io/"
+```
+
+Please configure this in `_config.yml` before using the theme.
+
+### Meta
+
+Meta variables hold basic information about your Jekyll site which will be used throughout the site and as meta properties for search engines, browsers, and the site's RSS feed.
+
+Change these variables in `_config.yml`:
+
+| Variable    | Example                          | Description                                                                                                                    | Optional |
+| ----------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | -------- |
+| title       | My Jekyll Blog                   | Name of website                                                                                                                | Yes      |
+| avatar      | assets/img/avatar.png            | Path of avatar image, to be displayed in the theme's header                                                                    | Yes      |
+| gravatar    | f9879d71855b5ff21e4963273a886bfc | [MD5 hash of your email address](https://secure.gravatar.com/site/implement/hash/) to load your Gravatar in the theme's header | Yes      |
+| description | My blog posts                    | Short description, primarily used by search engines                                                                            | Yes      |
+
+### Header and footer text
+
+Change these variables in `_config.yml`:
+
+
+| Variable                  | Example                             | Description                                                             | Optional |
+| ------------------------- | ----------------------------------- | ----------------------------------------------------------------------- | -------- |
+| header_text               | Welcome to my Jekyll blog           | HTML (shown below the navigation) with a background colour for emphasis | Yes      |
+| header_text_feature_image | assets/img/sample_feature_img_3.png | Background image for the header text                                    | Yes      |
+| footer_text               | Copyright 2014                      | HTML (shown at end of the site) with lighter text                       | Yes      |
+
+### Icons
+
+Add your username on selected websites in the icon section of the `_config.yml` file to display the site's icon from [Font Awesome](https://fortawesome.github.io/Font-Awesome/) in the header navigation. All icon variables should be your username enclosed in quotes (e.g. "username"), except for the following variables:
+
+
+| Variable       | Example                                         | Description                                            | Optional |
+| -------------- | ----------------------------------------------- | ------------------------------------------------------ | -------- |
+| rss            | true                                            | Takes boolean value (true/false) to show RSS feed icon | Yes      |
+| email_address  | type@example.com                                | Email address                                          | Yes      |
+| linkedin       | https://www.linkedin.com/in/FirstLast           | Full URL to profile on LinkedIn                        | Yes      |
+| stack_exchange | https://stackoverflow.com/users/0000/first-last | Full URL to profile on Stack Exchange                  | Yes      |
+
+### Scripts
+
+Change these variables in `_config.yml`:
+
+
+| Variable         | Example      | Description                                                                                                                         | Optional |
+| ---------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| google_analytics | UA-123456-01 | Google Analytics [tracking ID](https://support.google.com/analytics/answer/1032385?hl=en)                                           | Yes      |
+| disqus_shortname | shortname    | Disqus [shortname](https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-)                                     | Yes      |
+| katex            | true         | Takes boolean value (true/false) to conditionally load [KaTeX](https://khan.github.io/KaTeX/) scripts required for math typesetting | Yes      |
+
+Scripts listed here are only loaded if you provide a value in the `_config.yml` file.
+
+### Localization strings
+
+Change localization string variables in `_config.yml`.
+
+English text used in the theme (such as the "continue reading" label) has been grouped  so you can quickly translate the theme or change labels to suit your needs.
+
+### Colours, typography, padding
+
+![A selection of colours set in Type Theme by modifying the CSS](https://cloud.githubusercontent.com/assets/816965/5142488/130869a6-71d7-11e4-8a38-a69ec1673436.png)
+
+
+| Variable     | Example                    | Description                          | Optional                                                     |
+| ------------ | -------------------------- | ------------------------------------ | ------------------------------------------------------------ |
+| google_fonts | "Playfair+Display:400,700\ | PT+Sans:400,700,700italic,400italic" | [Google Fonts](https://www.google.com/fonts) to load for use |
+
+Navigate to the `_sass > base` directory and open `_variables.scss` to change colours, typography and padding used in the theme with CSS.
+
+Once you have loaded a Google Font in `config.yml`, you can integrate the fonts into your CSS by changing the font-family in `_variables.scss`. For example, after loading the Playfair Display and PT Sans fonts from Google:
+
+```css
+// Typography
+$font-family-main: 'PT Sans', Helvetica, Arial, sans-serif;
+$font-family-headings: 'Playfair Display', Helvetica, Arial, sans-serif;
+```
+
+Mozilla's [ColorPicker](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool) is a helpful tool to get your preferred colours in hexadecimal or RGBA form for use in `_variables.scss`.
+
+### Customize style when using the remote_theme
+
+If you're using Type Theme as a `remote_theme`, you can override variables and styles.
+To do so, simply create a `assets/css/main.scss` file on your website with the following content:
+
+```scss
+// assets/css/main.scss
 ---
-title: My New Page
+---
+
+@import "type-theme";
+```
+
+`@import "type-theme";` includes the theme styles, so you can add custom imports before and after it, depending on your needs.
+Best practice is to put your custom files in the `_sass` folder of your project. Jekyll will automatically look for them there.
+For example, say you wanted to override some theme variables and add some custom styles, you can create the following files:
+
+```scss
+// _sass/_variables.scss
+$background-color: black;
+```
+
+```sass
+// _sass/_custom.sass
+
+// SASS is supported as well, just note the file extension is .sass
+.feature-image header
+  height: 300px
+```
+
+Then import them both into `main.scss`:
+
+```scss
+// assets/css/main.scss
+---
+---
+
+@import "variables";
+@import "type-theme";
+@import "custom";
+```
+
+## Posts and pages in Type Theme
+Please refer to the [Jekyll docs for writing posts](https://jekyllrb.com/docs/posts/). Non-standard features are documented below.
+
+### Math typesetting
+Wrap math expressions with `$$` signs in your posts and make sure you have set the `katex` variable in `_config.yml` to `true` for math typesetting.
+
+For inline math typesetting, type your math expression on the *same line* as your content. For example:
+
+```latex
+Type math within a sentence $$2x^2 + x + c$$ to display inline
+```
+
+For display math typesetting, type your math expression on a *new line*. For example:
+
+```latex
+$$
+  \bar{y} = {1 \over n} \sum_{i = 1}^{n}y_i
+$$
+```
+
+Type Theme makes use for [KaTeX](https://khan.github.io/KaTeX/) for typesetting.
+
+### Feature images
+
+![Posts with geometric feature images](https://cloud.githubusercontent.com/assets/816965/5142406/19726478-71d6-11e4-8111-94f788b0e44d.png)
+
+Add a feature image by specifying a path to an image in the [front matter](http://jekyllrb.com/docs/frontmatter/) in the form of `feature-img: "img/PATH_TO_IMAGE.png"`.
+
+For example:
+
+```yml
+---
+layout: post
+title: Hello World
+feature-img: "assets/img/sample_feature_img.png"
+---
+```
+
+By default, the page title is displayed on top of the feature image, as well as on the browser's tab. You can change the feature image's displayed title by specifying a `feature-title` in the front matter:
+
+```yml
+---
+layout: post
+title: Short title
+feature-title: A much longer title
+feature-img: "assets/img/sample_feature_img.png"
+---
+```
+
+### Hiding pages from navigation
+
+In the front matter of a page, add `hide: true` to prevent the page from showing up in the header's navigation bar (visitors can still visit the URL through other means).
+
+For example:
+
+```yml
+---
 layout: page
+title: "Error 404: Page not found"
+permalink: /404.html
+hide: true
 ---
 ```
 
-You can also set these page variables in the frontmatter, if you want:
-- `subtitle`
-- `order` (orders links in the nav menu, e.g. `1`)
-- `icon` (optional; see [Font Awesome](http://fontawesome.io/icons/) for icon codes. Example: `fa-github`)
-- `hide` (optional; if `true`, a link won't appear in the nav menu. All this does is remove the nav link; your page will still be served to anyone who has the URL.)
+### Sorting pages in navigation
 
-**This same set of frontmatter variables (including `title`) can also be set in `index.md` and `blog.html`.** You may want to give them titles, or hide the homepage link with `hide: true` if the homepage is the only page.
+You can configure this theme to **sort your pages** in the header's navigation bar.
 
-For advanced SEO, this theme also lets you add `permalink` (see [Jekyll Docs](https://jekyllrb.com/docs/permalinks/#where-to-configure-permalinks)), `robots` (string, e.g. "noindex, nofollow"), and `canonical` (boolean; true is default) to any page or post.
+- Set `site_navigation_sort` in theme settings to a property name e.g. `'order'`
+- In the front matter of a non-hidden page, add `order: n`
 
-# Contributing
+For example:
 
-Please feel free to submit issues and feature requests!
-
-# Credits
-
-Thanks to @andrewbanchich for his many Jekyll adaptations of HTML5 UP's elegant themes, which helped and inspired me, and of course many thanks to HTML5 UP.
-
-Original README from HTML5 UP:
-
+```yml
+---
+layout: page
+title: Team
+permalink: /team/
+order: 4
+---
 ```
-Prologue by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
+### Tags
 
-This is Prologue, a simple, single page responsive site template. It features a
-clean, minimalistic design and a sticky sidebar with navigation-linked scrolling.
+Post tags should be placed between `[]` in your post metadata. Separate each tag with a comma.
 
-Demo content images* are courtesy of the ridiculously talented Felicia Simion. Check out
-more of her amazing work over at deviantART:
+For example:
 
-http://ineedchemicalx.deviantart.com/
-
-(* = Not included! Only meant for use with my own on-site demo, so please do NOT download
-and/or use any of Felicia's work without her explicit permission!)
-
-Demo banner images* courtesy of Unsplash, a radtastic collection of CC0 (public domain)
-images you can use for pretty much whatever.
-
-(* = Not included)
-
-AJ
-aj@lkn.io | @ajlkn
-
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
-
-
-Credits:
-
-	Demo Images:
-		Felicia Simion (ineedchemicalx.deviantart.com)
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fortawesome.github.com/Font-Awesome)
-
-	Other
-		jQuery (jquery.com)
-		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
-		CSS3 Pie (css3pie.com)
-		background-size polyfill (github.com/louisremi)
-		Respond.js (j.mp/respondjs)
-		jquery.scrolly (@ajlkn)
-		jquery.scrollzer (@ajlkn)
-		Skel (skel.io)
+```yml
+---
+layout: post
+title: Markdown and HTML
+tags: [sample, markdown, html]
+---
 ```
+
+A tags listing will be automatically generated using the `tags.html` file provided in Type Theme. If you're not using the tags feature it is safe to delete `tags.html`.
+
+### Search
+
+The search feature can be activated in the `_config.yml` file by changing its value from `false` to `true`.
+
+```yml
+  #Scripts
+  search: true
+```
+
+Once activated, the search bar will appear in the header. This feature uses [Lunr](https://lunrjs.com/) and searches through the title, tags and content of your posts.
+
+### Subtitles
+A subtitle can be displayed below your title on permalink post pages.
+
+To enable this feature, add `subtitle` to your post metadata.
+
+For example:
+
+```yml
+---
+layout: post
+title: "This is a title"
+subtitle: "This is a subtitle"
+---
+```
+
+## License
+[The MIT License (MIT)](https://github.com/rohanchandra/type-theme/blob/master/LICENSE)
