@@ -61,7 +61,6 @@ medical diagnosis platform )
 	    <small>-원천기술개발사업</small><br>
 * 공공기술 기반 시장연계 창업탐색 지원사업(한국형 I-Corps사업)
 	    <small>-과학기술정보통신부-한국연구재단</small><br>
-      
 * VR/AR 콘텐츠 및 하지 입력 장치를 이용한 노인 및 환자의 단기신체수행검사(SSPPB)의 신뢰도 사용성 증진 연구
 	    <small>-이공학개인기초연구지원사업</small><br>
 
