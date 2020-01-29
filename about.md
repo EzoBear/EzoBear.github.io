@@ -26,9 +26,9 @@ Lecture Experience
 Publications
 ====================
 <h4>MSLab</h4>
-* 김영준,황혜경,신지태, "Receptive Filed Steam Block을 이용한 실시간 객체검출 기법", 한국통신학회 동계종합학술발표회[Accepted]<br>
-* 김영준,정희윤,황혜경,신지태, "Controllable & Interpretable 혐오 발언 검출기", 한국통신학회 동계종합학술발표회[Accepted]<br>
-* 김영준, 황혜경, 신지태, "Optimization of Object Detection and Inference Time under Autonomous Driving"(	자율주행 환경에서 딥러닝 기법의 객체 검출과 속도 성능 최적화), Journal of Korean Institute of Communications and Information Sciences[Under Review]<br>
+* 김영준,황혜경,신지태, "Receptive Filed Steam Block을 이용한 실시간 객체검출 기법",  한국통신학회 동계종합학술발표회, Feb. 5, 2020.<br>
+* 김영준,정희윤,황혜경,신지태, "Controllable & Interpretable 혐오 발언 검출기",  한국통신학회 동계종합학술발표회, Feb. 5, 2020.<br>
+* 김영준, 황혜경, 신지태, "Optimization of Object Detection and Inference Time under Autonomous Driving"(	자율주행 환경에서 딥러닝 기법의 객체 검출과 속도 성능 최적화), Journal of Korean Institute of Communications and Information Sciences[Accepted]<br>
 * Youngjun Kim, En Han, Hyekyoung Hwang, Yeongsang An, Jitae Shin, "Dietary Habits Improvement Based on Artificial Intelligence ( 인공지능 기반 식생활 습관 개선 다이어트 애플리케이션)," Journal of Korean Institute of Communications and Information Sciences Vol.44 No.08, Aug. 2019.<br>
 * 김영준, 한은, 안영상, 신지태, "Avocado : 인공지능 기반 습관 성형 다이어트," 한국통신학회 동계종합학술발표회, Jan. 25, 2019.<br>
 * 김영준, 한은, 안영상, 신지태, "Avocado : 딥 러닝 기반 다이어트 다이어리 애플리케이션 입력 인터페이스," 한국통신학회 동계종합학술발표회, Jan. 25, 2019.<br>
