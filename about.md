@@ -26,7 +26,7 @@ Lecture Experience
 Publications
 ====================
 <h4>MSLab</h4>
-* Youngjun Kim, Hyekyoung Hwang, Jitae Shin, "Robust Object Detection under Harsh Autonomous-driving Environments," SCI Journal, Apr. 25, 2020. [Submitted]
+* Youngjun Kim, Hyekyoung Hwang, Jitae Shin, "Robust Object Detection under Harsh Autonomous-driving Environments," SCI Journal, Apr. 25, 2020. [Submitted]<br>
 * 김영준,황혜경,신지태, "Receptive Filed Steam Block을 이용한 실시간 객체검출 기법",  한국통신학회 동계종합학술발표회, Feb. 5, 2020.<br>
 * 김영준,정희윤,황혜경,신지태, "Controllable & Interpretable 혐오 발언 검출기",  한국통신학회 동계종합학술발표회, Feb. 5, 2020.<br>
 * 김영준, 황혜경, 신지태, "Optimization of Object Detection and Inference Time under Autonomous Driving"(	자율주행 환경에서 딥러닝 기법의 객체 검출과 속도 성능 최적화), The Journal of Korean Institute of Communications and Information Sciences, Vol.45 No.04, April, 2020., Apr. 15, 2020.<br>
