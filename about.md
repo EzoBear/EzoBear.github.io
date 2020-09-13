@@ -83,8 +83,8 @@ medical diagnosis platform )
 * 수제화 O2O 서비스를 위한 개인별 맞춤 수제화 제작 지원 시스템 및 쇼핑몰 개발
            <small>-중소기업청</small><br>
 	  
-<h4>Homepage</h4>
-<A href="MSLab   : http://msl.skku.ac.kr/">http://msl.skku.ac.kr/</A>
-<A href="H-Lab   : http://humanict.skku.edu/">http://humanict.skku.edu/</A>
-<A href="IMS-Lab : http://ims-eh.kpu.ac.kr/">http://ims-eh.kpu.ac.kr/</A>
+<h4>Homepage Link</h4>
+<A href="http://msl.skku.ac.kr/">MSLab   : http://msl.skku.ac.kr/</A>
+<A href="http://humanict.skku.edu/">H-Lab   : http://humanict.skku.edu/</A>
+<A href="http://ims-eh.kpu.ac.kr/">IMS-Lab : http://ims-eh.kpu.ac.kr/</A>
 
