@@ -35,7 +35,9 @@ Publications
 * 김영준, 한은, 안영상, 신지태, "Avocado : 딥 러닝 기반 다이어트 다이어리 애플리케이션 입력 인터페이스," 한국통신학회 동계종합학술발표회, Jan. 25, 2019.<br>
 
 <h4>H-Lab</h4>
-* Suzi Choi, Young Jun-Kim ect, Designing Conversational Voice User Interface for Improving Intimacy of Shared Invehicle, UbiComp/ISWC'18 Adjunct, 2018<br>
+* YoungJun Kim ect 2, Sound Classification using 3D Image via Multi-Time Scale Transform, ICCT(International Conference on Convergence Technology), 2020.<br>
+* 정하영, 김영준 ect, Subjective Conformity Assessment of Matching between Artwork and Classical Music using Deep Learning based Imaginary Soundscape, ICCT(International Conference on Convergence Technology) Korean Section, 2020.<br>
+* Suzi Choi, YoungJun Kim ect, Designing Conversational Voice User Interface for Improving Intimacy of Shared Invehicle, UbiComp/ISWC'18 Adjunct, 2018<br>
 		
 <h4>IMS-Lab</h4>
 * Young Jun Kim, Jeong Min Park, Sung Taek Chung and Jeong Joon Kim, 2018. Keyword-Based Collaborative Filter Recommendation System Using Scraping. Journal of Engineering and Applied Sciences, 13: 1506-1514. <Scopus><br> 
