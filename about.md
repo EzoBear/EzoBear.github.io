@@ -84,7 +84,7 @@ medical diagnosis platform )
            <small>-중소기업청</small><br>
 	  
 <h4>Homepage Link</h4>
-<A href="http://msl.skku.ac.kr/">MSLab   : http://msl.skku.ac.kr/</A>
-<A href="http://humanict.skku.edu/">H-Lab   : http://humanict.skku.edu/</A>
-<A href="http://ims-eh.kpu.ac.kr/">IMS-Lab : http://ims-eh.kpu.ac.kr/</A>
+<A MSLab   : /><A href="http://msl.skku.ac.kr/">http://msl.skku.ac.kr/</A><br>
+<A H-Lab   : /><A href="http://humanict.skku.edu/">http://humanict.skku.edu/</A><br>
+<A IMS-Lab : /><A href="http://ims-eh.kpu.ac.kr/">http://ims-eh.kpu.ac.kr/</A><br>
 
