@@ -73,8 +73,6 @@ paginate_path: "blog/page:num"
 # BUILD SETTINGS
 markdown: kramdown
 highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
 incremental: false
 sass:
   sass_dir: _sass
