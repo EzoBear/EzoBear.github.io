@@ -9,7 +9,7 @@ Education
 ===================
 * YoungJun Kim currently carrying out a integrated Ph. D. program from Sungkyunkwan University<br>
 * YoungJun Kim complete the lean startup innovation program from George Washington University in 2018<br>
-* YoungJun Kim received the B.S. degrees, in Computer Engineering from Korea Polytechnic University University in 2018.2<br>
+* YoungJun Kim received the B.S. degrees, in Computer Engineering from Korea Polytechnic University in 2018.2<br>
 
 His research interests include object detection architecture and model compression method for real-time system, in image processing using deep learning
 
