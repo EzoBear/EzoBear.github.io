@@ -36,6 +36,7 @@ Publications
 
 <h4>H-Lab</h4>
 * YoungJun Kim ect 2, "Sound Classification using 3D Image via Multi-Time Scale Transform", ICCT(International Conference on Convergence Technology), 2020.<br>
+* JEONG, Hayoung; KIM, Youngjun; CHO, Jundong. Convergence evaluation method using multisensory and matching painting and music using deep learning based on imaginary soundscape. Journal of the Korea Convergence Society, 2020, 11.11: 175-182.
 * 정하영, 김영준 ect, "Subjective Conformity Assessment of Matching between Artwork and Classical Music using Deep Learning based Imaginary Soundscape", ICCT(International Conference on Convergence Technology) Korean Section, 2020.<br>
 * Suzi Choi, YoungJun Kim ect, "Designing Conversational Voice User Interface for Improving Intimacy of Shared Invehicle", UbiComp/ISWC'18 Adjunct, 2018<br>
 		
