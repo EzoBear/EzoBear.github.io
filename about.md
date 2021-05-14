@@ -34,7 +34,7 @@ Publications
 * Youngjun Kim, En Han, Hyekyoung Hwang, Yeongsang An, Jitae Shin, "Dietary Habits Improvement Based on Artificial Intelligence ( 인공지능 기반 식생활 습관 개선 다이어트 애플리케이션)," Journal of Korean Institute of Communications and Information Sciences Vol.44 No.08, Aug. 2019.<br>
 * Young Jun Kim, Jeong Min Park, Sung Taek Chung and Jeong Joon Kim, 2018. "Keyword-Based Collaborative Filter Recommendation System Using Scraping". Journal of Engineering and Applied Sciences, 13: 1506-1514. <Scopus><br> 
 		
-<h4>ECT</h4>
+<h4>ETC</h4>
 * YoungJun Kim ect 2, "Sound Classification using 3D Image via Multi-Time Scale Transform", ICCT(International Conference on Convergence Technology), 2020.<br>
 * 김영준,정희윤,황혜경,신지태, "Controllable & Interpretable 혐오 발언 검출기",  한국통신학회 동계종합학술발표회, Feb. 5, 2020.<br>
 * 김영준,황혜경,신지태, "Receptive Filed Stem Block을 이용한 실시간 객체검출 기법",  한국통신학회 동계종합학술발표회, Feb. 5, 2020.<br>
