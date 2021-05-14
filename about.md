@@ -26,8 +26,8 @@ Lecture Experience
 Publications
 ====================
 <h4>SCI</h4>
-* KIM, Youngjun; HWANG, Hyekyoung; SHIN, Jitae. Robust object detection under harsh autonomous‐driving environments. IET Image Processing, 2021.<br>
-* Kim, Youngjun; Jeong, Hayoung; Cho, Jun-Dong; Shin, Jitae. Construction of a Soundscape-Based Media Art Exhibition to Improve User Appreciation Experience by Using Deep Neural Networks, Electronics 2021.
+* KIM, Youngjun; HWANG, Hyekyoung; SHIN, Jitae. "Robust object detection under harsh autonomous‐driving environments". IET Image Processing, 2021.<br>
+* Kim, Youngjun; Jeong, Hayoung; Cho, Jun-Dong; Shin, Jitae. "Construction of a Soundscape-Based Media Art Exhibition to Improve User Appreciation Experience by Using Deep Neural Networks", Electronics 2021.
 
 <h4>KCI & Scopus</h4>
 * 김영준, 황혜경, 신지태, "Optimization of Object Detection and Inference Time under Autonomous Driving"(자율주행 환경에서 딥러닝 기법의 객체 검출과 속도 성능 최적화), The Journal of Korean Institute of Communications and Information Sciences, Vol.45 No.04, April, 2020., Apr. 15, 2020.<br>
